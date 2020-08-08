@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="/webjars/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .loading {
+            height: 100px;
+            width: 100px;
+            padding: 15px;
+            border: 6px solid #ccc;
+            border-right-color: #888;
+            border-radius: 100px;
+            -webkit-animation: rotate 1s infinite linear;
+            position: absolute;
+            left: 45vw;
+            top: 43vh;
+        }
+        @-webkit-keyframes rotate {
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading"></div>
+
+    <script src="/webjars/jquery/jquery.min.js"></script>
+    <script src="/webjars/sockjs-client/sockjs.min.js"></script>
+    <script src="/webjars/stomp-websocket/stomp.min.js"></script>
+    <script src="/article.js"></script>
+</body>
+</html>
